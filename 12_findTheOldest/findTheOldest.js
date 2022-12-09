@@ -8,24 +8,11 @@ const findTheOldest = function(people) {
         else {
             if (person.yearOfDeath){
                 if( oldest.yearOfDeath - oldest.yearOfBirth <
-                    person.yearOfDeath - person.yearOfBirth ) oldest = person;
+                    person.yearOfDeath - person.yearOfBirth )   { oldest = person;} }
             else {
-                if( oldest.yearOfDeath - oldest.yearOfBirth <
-                    (new Date()).getFullYear() - person.yearOfBirth ) oldest = person;
-            }
-
-            }
-                oldest.yearOfDeath - oldest.yearOfBirth <
-                person.yearOfDeath - person.yearOfBirth ){
-                    
-              }
+                if( oldest.yearOfDeath     - oldest.yearOfBirth <
+                (new Date()).getFullYear() - person.yearOfBirth ){oldest = person;} }
         }
-        /*oldest = !oldest ? person
-        : person.yearOfDeath ? oldest.yearOfDeath - oldest.yearOfBirth 
-        > person.yearOfDeath - person.yearOfBirth ? oldest 
-        : person 
-        : (new Date()).getFullYear() - oldest.yearOfBirth 
-        > person.yearOfDeath - person.yearOfBirth ? oldest : person;*/        
     })
     return oldest;
 };
