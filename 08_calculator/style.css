@@ -1,0 +1,36 @@
+#calcContainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    width: 220px;
+    height: 300px;
+}
+
+#display {
+    width: 140px;
+    height: 35px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.displaycontainer {
+    height: 40px;
+    width: 10px;
+    grid-column: 1 / span 3;
+    align-self: center;
+}
+
+.calcButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 40px;
+    border-style: solid;
+    border: 3px;
+}
+
+button {
+    height: 55px;
+    width: 40px;
+}
